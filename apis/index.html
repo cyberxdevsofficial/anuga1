@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>APIs - Anuga Official</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:Poppins;background:#141e30;color:white}
-nav{display:flex;justify-content:space-between;padding:15px;background:#000}
-a{color:#00ffe7;text-decoration:none;margin:0 10px}
-.container{padding:40px}
-.card{background:#1f2c3a;padding:20px;margin:20px 0;border-radius:15px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;scroll-behavior:smooth}
+body{background:#141e30;color:white}
+nav{display:flex;justify-content:space-between;padding:15px;background:#000;position:sticky;top:0;z-index:1000;}
+nav a{color:#00ffe7;text-decoration:none;margin:0 10px;font-weight:600}
+nav a:hover{color:white}
+section{min-height:100vh;padding:100px 40px;display:flex;flex-direction:column;align-items:center;text-align:center}
+h1,h2{margin-bottom:20px}
+.api-card{background:rgba(255,255,255,0.05);padding:25px;margin:20px 0;border-radius:15px;backdrop-filter:blur(5px);transition:0.3s;max-width:700px}
+.api-card:hover{transform:translateY(-5px);background:rgba(0,255,231,0.2);}
+footer{text-align:center;padding:20px;background:#111;margin-top:40px}
 </style>
 </head>
 <body>
@@ -18,31 +23,39 @@ a{color:#00ffe7;text-decoration:none;margin:0 10px}
 <nav>
 <div>Anuga Official</div>
 <div>
-<a href="/">Main</a>
+<a href="/">Home</a>
 <a href="/about">About</a>
 <a href="/contact">Contact</a>
 </div>
 </nav>
 
-<div class="container">
-<h1>Our APIs</h1>
+<section style="background:url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5') center/cover; background-attachment:fixed;">
+<h1>Our Powerful APIs</h1>
+<p>Integrate advanced AI, developer, and automation APIs easily.</p>
+</section>
 
-<div class="card">
-<h3>AI Chat API</h3>
-<p>Chat & Image generation AI integration API.</p>
+<section>
+<div class="api-card">
+<h2>AI Chat API</h2>
+<p>Interactive AI chatbot with image, voice, and text generation features for your platform.</p>
 </div>
 
-<div class="card">
-<h3>Developer API</h3>
-<p>Build apps using powerful AI endpoints.</p>
+<div class="api-card">
+<h2>Developer API</h2>
+<p>Integrate developer tools and endpoints to create your own AI-powered applications.</p>
 </div>
 
-<div class="card">
-<h3>Automation API</h3>
-<p>Create bots & automation systems easily.</p>
+<div class="api-card">
+<h2>Automation API</h2>
+<p>Automate workflows, bots, and systems easily using our ready-to-use API endpoints.</p>
 </div>
 
+<div class="api-card">
+<h2>Analytics API</h2>
+<p>Real-time analytics API for tracking usage, AI interactions, and performance metrics.</p>
 </div>
+</section>
 
+<footer>© 2026 Anuga Official | All Rights Reserved</footer>
 </body>
 </html>
