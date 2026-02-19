@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anuga Official - Main</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+body{background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);color:white}
+nav{display:flex;justify-content:space-between;align-items:center;padding:15px 25px;background:#111}
+.logo{font-weight:700;color:#00ffe7;font-size:20px}
+.menu-icon{width:30px;cursor:pointer}
+.links{position:absolute;right:20px;top:60px;background:#111;padding:15px;border-radius:10px;display:none}
+.links a{display:block;color:white;text-decoration:none;padding:10px}
+.links a:hover{background:#00ffe7;color:black}
+.hero{height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.btn{background:#00ffe7;color:black;padding:12px 25px;border-radius:30px;text-decoration:none;margin-top:20px}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Anuga Official</div>
+<img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" class="menu-icon" onclick="toggleMenu()">
+<div class="links" id="menu">
+<a href="/">Main</a>
+<a href="/apis">APIs</a>
+<a href="/about">About</a>
+<a href="/contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+<h1>Welcome to Anuga Official</h1>
+<p>Technology | AI | Development Platform from Sri Lanka</p>
+<a href="/apis" class="btn">Explore APIs</a>
+</section>
+
+<script>
+function toggleMenu(){
+document.getElementById("menu").style.display =
+document.getElementById("menu").style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
