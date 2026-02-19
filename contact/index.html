@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact - Anuga Official</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:Poppins;background:linear-gradient(135deg,#000428,#004e92);color:white}
-.container{padding:40px}
-input,textarea{width:100%;padding:12px;margin:10px 0;border:none;border-radius:8px}
-button{padding:12px;background:#00ffe7;border:none;border-radius:8px;font-weight:bold}
-nav a{color:#00ffe7;text-decoration:none;margin-right:15px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;scroll-behavior:smooth}
+body{background:linear-gradient(135deg,#000428,#004e92);color:white;}
+nav a{color:#00ffe7;text-decoration:none;margin-right:15px;font-weight:600}
+nav a:hover{color:white}
+.container{padding:100px 40px;max-width:800px;margin:0 auto;}
+h1{text-align:center;font-size:48px;margin-bottom:30px}
+form{display:flex;flex-direction:column;}
+input,textarea{margin:10px 0;padding:15px;border:none;border-radius:8px;font-size:16px}
+button{padding:15px;background:#00ffe7;border:none;border-radius:8px;font-weight:bold;cursor:pointer;margin-top:10px}
+button:hover{background:white;color:black;transition:0.3s}
+.section-block{background:rgba(255,255,255,0.05);padding:20px;margin:20px 0;border-radius:15px;backdrop-filter:blur(5px);}
+footer{text-align:center;padding:20px;background:#111;margin-top:40px}
+@media(max-width:768px){h1{font-size:32px}}
 </style>
 </head>
 <body>
@@ -18,21 +26,26 @@ nav a{color:#00ffe7;text-decoration:none;margin-right:15px}
 <div class="container">
 
 <nav>
-<a href="/">Main</a>
+<a href="/">Home</a>
 <a href="/apis">APIs</a>
 <a href="/about">About</a>
 </nav>
 
 <h1>Contact Us</h1>
 
+<div class="section-block">
+<p>We are always ready to hear from you! Reach out for collaboration, API integration, or general inquiries.</p>
+</div>
+
 <form>
 <input type="text" placeholder="Your Name" required>
 <input type="email" placeholder="Your Email" required>
-<textarea rows="5" placeholder="Your Message"></textarea>
+<textarea rows="5" placeholder="Your Message" required></textarea>
 <button type="submit">Send Message</button>
 </form>
 
 </div>
 
+<footer>© 2026 Anuga Official | All Rights Reserved</footer>
 </body>
 </html>
